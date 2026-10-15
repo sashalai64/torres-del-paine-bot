@@ -2,8 +2,8 @@ name: Torres del Paine Availability Monitor
 
 on:
   schedule:
-    # Runs every 20 minutes automatically
-    - cron: '*/20 * * * *'
+    # Runs at non-standard intervals to avoid queue congestion
+    - cron: '17,37,57 * * * *'
   workflow_dispatch: # Allows manual run button in GitHub UI
 
 jobs:
